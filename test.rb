@@ -1,15 +1,7 @@
-class GoodDog
-    DOG_YEARS = 5
-    attr_accessor :name, :age
-    def initialize(n, a)
-        @name = n
-        @age = a * DOG_YEARS
-    end
-    def to_s
-        "this is #{name} and age is #{age}"
+def repeatedString(s, n)
+    splited = s.chars()
+    splited.each do |i|
+        puts i += splited
     end
 end
-hachico = GoodDog.new("hachico", 4)
-puts hachico
-irb :001 > "#{hachico}"
-p hachico
+repeatedString("aba", 10)
