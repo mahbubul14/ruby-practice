@@ -1,27 +1,14 @@
 def pageCount(n, p)
     # Write your code here
-    l_page = n-p
-    p l_page_rem = l_page % 2
-  
-    if l_page_rem == 0
-      p l_page_result = l_page/2
-    else
-     p l_page_result = (l_page-1)/2
+    m_page = (n/2.to_f).floor
+
+    if n.even?
+      p f_page_result = m_page/2
+       l_page = n - m_page
+       l_page_result = l_page/2
+    elsif n.odd?
+        p f_page_result = p - 1
+        p l_page_result = n - p
     end
-  
-    f_page_rem = p%2
-  
-    if f_page_rem == 0
-      f_page = p/2
-    else
-      f_page = (p-1)/2
-    end
-  
-    if f_page < l_page_result
-      result = f_page
-    else
-      result = l_page_result
-    end
-    result
-  end
-  pageCount(5, 2)
+end
+pageCount(5,4)
