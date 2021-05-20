@@ -1,6 +1,5 @@
 def pageCount(n, p)
-  # Write your code here
-  if n.even?
+  if n%2 == 0
     f_page = p/2
     l_page = (n-p+1)/2
   else
