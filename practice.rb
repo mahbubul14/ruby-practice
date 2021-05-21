@@ -1,15 +1,17 @@
-def pageCount(n, p)
-  if n%2 == 0
-    f_page = p/2
-    l_page = (n-p+1)/2
-  else
-    f_page = p/2
-    l_page = (n-p)/2
+def getMoneySpent(keyboards, drives, b)
+  if keyboards.sort[0] + drives.sort[0]>b.max
+    return -1
   end
-  if f_page < l_page
-    p f_page
-  else 
-    p l_page
+  sum =[]
+  keyboards.each do|i|
+    drives.each do|j|     
+      if i+j <= b.max
+        sum << (i+j)
+      end
+    end
   end
+  puts result = sum.max
 end
-pageCount(5, 4)
+# getMoneySpent([3, 1], [5, 2, 8], [10, 2, 3,])
+
+getMoneySpent([10, 2, 3], [3, 1], [5, 2, 8])
