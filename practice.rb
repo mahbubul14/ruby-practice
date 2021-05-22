@@ -1,8 +1,4 @@
 def getMoneySpent(keyboards, drives, b)
-
-  if (keyboards.sort[0] + drives.sort[0]) > b.max
-    return -1
-  end
   sum =[]
   keyboards.each do|i|
     drives.each do|j|     
@@ -11,8 +7,13 @@ def getMoneySpent(keyboards, drives, b)
       end
     end
   end
-  puts result = sum.max
+  if sum.empty?
+    puts -1
+  else
+    puts sum.max
+  end
 end
 getMoneySpent([3, 1], [5, 2, 8], [10, 2, 3,])
+# getMoneySpent([5, 6], [5, 2, 8], [5, 2, 3,])
 
 # getMoneySpent([10, 2, 3], [3, 1], [5, 2, 8])
