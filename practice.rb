@@ -7,11 +7,10 @@ def getMoneySpent(keyboards, drives, b)
       end
     end
   end
-  result = sum.max
   if sum.empty?
     -1
   else
-    result
+    sum.max
   end
 end
 
