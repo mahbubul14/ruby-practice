@@ -1,20 +1,11 @@
-def getMoneySpent(keyboards, drives, b)
-  sum =[]
-  keyboards.each do|i|
-    drives.each do|j|     
-      if i+j <= b
-        sum << (i+j)
-      end
-    end
-  end
-  if sum.empty?
-    -1
-  else
-    sum.max
+def pickingNumbers(a)
+  # Write your code here
+  arr = a.sort
+  # arr << a.sort
+  arr.each do|i|
+    p arr[0] -= arr[i+1]
   end
 end
+pickingNumbers([4, 6, 5, 3, 3, 1])
 
-getMoneySpent([3, 1], [5, 2, 8], [10, 2, 3,])
-# getMoneySpent([5, 6], [5, 2, 8], [5, 2, 3,])
-
-# getMoneySpent([10, 2, 3], [3, 1], [5, 2, 8])
+# [1, 3, 3, 4, 5, 6]
