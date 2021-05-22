@@ -2,17 +2,19 @@ def getMoneySpent(keyboards, drives, b)
   sum =[]
   keyboards.each do|i|
     drives.each do|j|     
-      if i+j <= b.max
+      if i+j <= b
         sum << (i+j)
       end
     end
   end
+  result = sum.max
   if sum.empty?
-    puts -1
+    -1
   else
-    puts sum.max
+    result
   end
 end
+
 getMoneySpent([3, 1], [5, 2, 8], [10, 2, 3,])
 # getMoneySpent([5, 6], [5, 2, 8], [5, 2, 3,])
 
