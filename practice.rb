@@ -1,9 +1,11 @@
 def pickingNumbers(a)
 
   arr = a.sort
-  count = 0
+  count =[]
   for i in arr do
-    count =  i- i[i+1]
+    if i - [i+1] == 1 
+      count +=1
+    end
   end
   puts count
 end
