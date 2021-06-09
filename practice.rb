@@ -1,13 +1,18 @@
 def pickingNumbers(a)
-
-  arr = a.sort
-  count =[]
-  for i in arr do
-    if i - [i+1] == 1 
-      count +=1
-    end
+  ar=a.sort 
+  r=0
+  ar.each_with_index do |val, id|
+      c=1
+      i=id+1
+      while i < ar.size && (ar[i] - val) <=1
+         p c+=1
+          c>r ? r=c : r=r
+          i+=1
+      end
   end
-  puts count
+  r
 end
-pickingNumbers([4, 6, 5, 3, 3, 1])
-# [1, 3, 3, 4, 5, 6]
+
+pickingNumbers([1, 2, 2, 3, 1, 2])
+
+# [1, 1, 2, 2, 2, 3]

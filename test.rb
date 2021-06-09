@@ -1,22 +1,16 @@
 def pickingNumbers(a)
-    # Write your code here
-    a.sort!
-    current_counter = 0
-    max_counter = 0
-    
-    i = 0
-    while i < a.size
-      j = 1
-      
-      while (a[j].to_int - a[i].to_int) <= 1
-        current_counter += 1
-        j += 1
-        max_counter = current_counter if current_counter > max_counter
-      end
-      
-      i+=1
-    end
-    p max_counter
-  end
-  pickingNumbers([4, 6, 5, 3, 3, 1])
-  
+  p ar=a.sort 
+   r=0
+   ar.each_with_index do |val, id|
+       # c=1
+       # i=id+1
+       # while i < ar.size && (ar[i] - val) <=1
+       #     c+=1
+       #     c>r ? r=c : r=r
+       #     i+=1
+       # end
+   end
+   r
+ end
+ 
+ pickingNumbers([1, 2, 2, 3, 1, 2])
