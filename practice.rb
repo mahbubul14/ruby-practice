@@ -1,18 +1,7 @@
-def pickingNumbers(a)
-  ar=a.sort 
-  r=0
-  ar.each_with_index do |val, id|
-      c=1
-      i=id+1
-      while i < ar.size && (ar[i] - val) <=1
-         p c+=1
-          c>r ? r=c : r=r
-          i+=1
-      end
-  end
-  r
+def hurdleRace(k, height)
+  # Write your code here
+p dose = height.max.to_i
+puts dose - k.to_i
 end
 
-pickingNumbers([1, 2, 2, 3, 1, 2])
-
-# [1, 1, 2, 2, 2, 3]
+hurdleRace([5], [1, 6, 3, 5, 2])
