@@ -1,7 +1,7 @@
 def hurdleRace(k, height)
   # Write your code here
-p dose = height.max.to_i
-# p height.max.to_i - k.to_i
+
+p height.max.to_i - k.join.to_i
 end
 
-hurdleRace([5], [1, 6, 3, 5, 2])
+hurdleRace([4], [1, 6, 3, 5, 2])
