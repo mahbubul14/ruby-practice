@@ -1,12 +1,12 @@
 def hurdleRace(k, height)
   # Write your code here
-j = k[1].to_i
+j = k[].join.to_i
 h = height.max.to_i
 
 if j < h
-  p h - j
+  puts h - j
 else
-  p 0
+  puts 0
 end
 end
 

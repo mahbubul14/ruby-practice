@@ -1,11 +1,10 @@
-def hurdleRace(k, height)
+def libraryFine(d1, m1, y1, d2, m2, y2)
     # Write your code here
-  p h = height.max.to_i
-  p j = k[1].to_i
-if j<h 
-    p h-j
-else
-    p 0
+    date = d2 - d1, m2 - m1, y2 - y1
+    if date.to_a == 0ioiiiiiiiiiiiiii[]
+        p 0
+    end
 end
-  end
-  hurdleRace([5,7],[1, 6, 3, 5, 2])
+# libraryFine([9], [6], [2015], [6], [6], [2015])
+# d1 == d2 && m1 == m2 && y2 == y2
+libraryFine(6, 6, 2015, 6, 6, 2015)
