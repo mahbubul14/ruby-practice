@@ -1,5 +1,5 @@
-function findDigits(n) {
+function pageCount(n, p) {
     // Write your code here
-console.log(n.split())
+console.log(p);
 }
-findDigits(12)
+pageCount(5, 4);
