@@ -1,8 +1,17 @@
-let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
-console.log(condiments.length)
-// const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+// const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
 
-// condiments[0] = 'Mayo';
-// console.log(condiments);
-// condiments = ['Mayo'];
-// console.log(condiments);
+// function count(fruitlist){
+//     for (let i=0; i<fruits.length; i++){
+//         if (i<fruits.length){
+//             console.log("I want to eat a " + fruits[i])
+//         }
+//     }
+// }
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+// for (let i = 0; i<fruits.length; i++) {
+//     console.log("I want to eat a " + fruits[i])
+//   }
+fruits.forEach(function(element)){
+    console.log("I want to eat a " + ${element})
+}
