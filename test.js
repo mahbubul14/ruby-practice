@@ -1,17 +1,13 @@
-// const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+function getMoneySpent(keyboards, drives, b) {
+const sum = [];
 
-// function count(fruitlist){
-//     for (let i=0; i<fruits.length; i++){
-//         if (i<fruits.length){
-//             console.log("I want to eat a " + fruits[i])
-//         }
-//     }
-// }
-const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
-
-// for (let i = 0; i<fruits.length; i++) {
-//     console.log("I want to eat a " + fruits[i])
-//   }
-fruits.forEach(function(element)){
-    console.log("I want to eat a " + ${element})
+keyboards.forEach(k => {
+  drives.forEach(d => {
+    if(k+d <= b) sum.push(k+d)
+})
+});
+console.log(sum);
+return sum.length === 0? -1: Math.max(...sum);
 }
+
+getMoneySpent([3,1], [5,2,8], [10,2,3]);
