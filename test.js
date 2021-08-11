@@ -1,21 +1,26 @@
-let employee = {
-  firstName: 'peter',
-  'last name': "doe",
-  employeeId: 2
-  }
-  console.log(this.firstName)
-  
-  
-  // console.log(employee.firstName);
-  // console.log(employee['last name']);
-  // console.log(employee['employeeId']);
-  // console.log('age' in employee);
-  // console.log('firstName' in employee);
-  // console.log(employee.sex = "male")
-  // for(const key in employee){
-  //     console.log(key)
-  // };
-  // employee.greet = function (){
-  //     console.log('Hello');
-  // }
-  // employee.greet();
+const title = document.querySelector('#title')
+const author = document.querySelector('#author')
+const addbutton = document.querySelector('#addbutton')
+const booklist = document.querySelector('#book-list')
+
+addbutton.addEventListener('click', function(e){
+    e.preventDefault();
+
+if(title.value ==""){
+    alert('please input valid data')
+}
+else {
+    const newRow = document.createElement('tr');
+
+    const newtitle = document.createElement('th')
+    newtitle.innerHTML = title.value;
+    newRow.appendChild(newtitle)
+
+    const newAuthor = document.createElement('th');
+    newAuthor.innerHTML = author.value;
+    newRow.appendChild(newAuthor);
+
+
+    booklist.appendChild(newRow);
+    }
+});
