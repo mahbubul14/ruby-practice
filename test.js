@@ -1,26 +1,11 @@
-const title = document.querySelector('#title')
-const author = document.querySelector('#author')
-const addbutton = document.querySelector('#addbutton')
-const booklist = document.querySelector('#book-list')
+const authorName = document.getElementById("name")
+const authorAge = document.getElementById("age")
+const addButton = document.getElementById("add")
 
-addbutton.addEventListener('click', function(e){
-    e.preventDefault();
-
-if(title.value ==""){
-    alert('please input valid data')
+addButton.onclick = function(){
+    const nm = authorName.value;
+    const ag = authorAge.value;
+    
+    console.log(nm);
+    console.log(ag);
 }
-else {
-    const newRow = document.createElement('tr');
-
-    const newtitle = document.createElement('th')
-    newtitle.innerHTML = title.value;
-    newRow.appendChild(newtitle)
-
-    const newAuthor = document.createElement('th');
-    newAuthor.innerHTML = author.value;
-    newRow.appendChild(newAuthor);
-
-
-    booklist.appendChild(newRow);
-    }
-});
