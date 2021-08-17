@@ -1,4 +1,7 @@
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
-    localStorage.setItem()
-  }
+
+
+
+// function myFunction() {
+//   var newlist = document.querySelector("#demo");
+//   newlist.innerHTML = "hello world";;
+//   }
