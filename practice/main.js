@@ -1,13 +1,13 @@
-let nMenu = document.createElement('li');
-nMenu.textContent = 'hello';
-menu.appendChild(nMenu);
+const book = document.getElementById("book");
+const author = document.getElementById("author");
+const btn = document.getElementById("btn");
+const nList = document.getElementById("list");
 
-const email= document.querySelector('#mail');
-
-email.addEventListener("input", function(event){
-    if (email.validity.typeMismatch){
-        email.setCustomValidity("Input valid email address");
-    } else {
-        email.setCustomValidity("");
-    }
+btn.addEventListener('click',function(books){
+    const submit = document.createElement('li');
+    submit.innerHTML = book.value + author.value;
+    nList.appendChild(submit);
 });
+
+localStorage.setItem(books);
+localStorage.getItem(books)
