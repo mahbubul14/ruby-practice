@@ -38,7 +38,7 @@
 let books = new Array();
 const displayBooks = document.getElementById('displayBooks');
 const addButton = document.getElementById('add');
-const date = document.getElementById('date');
+// const date = document.getElementById('date');
 
 class Book {
   constructor(title, author) {
@@ -67,8 +67,8 @@ function display() {
     // bookContainer.style.borderBottom = '1px white solid';
     const bookData = document.createElement('td');
     const buttonData = document.createElement('td');
-    bookData.style.display = 'flex';
-    bookData.style.justifyContent = 'space-between';
+    // bookData.style.display = 'flex';
+    // bookData.style.justifyContent = 'space-between';
     const remove = document.createElement('button');
     remove.textContent = 'Remove';
     remove.onclick = () => {
@@ -76,7 +76,7 @@ function display() {
       saveBooks();
       display();
     };
-    bookData.innerText = `'${book.title}' by ${book.author}`;
+    bookData.innerText = `${book.title} by ${book.author}`;
     displayBooks.appendChild(bookContainer);
     bookContainer.appendChild(bookData);
     bookContainer.appendChild(buttonData);
