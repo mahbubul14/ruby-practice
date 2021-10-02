@@ -1,24 +1,20 @@
-let text =document.querySelector("#text");
-let btn = document.querySelector("#btn");
-let result = document.querySelector(("#result"));
-
-function display(){
-
-    newText = document.createElement('p');
-    newText.innerHTML =text.value;
-    result.appendChild(newText);
-}
-
-btn.addEventListener('click', display);
-
-// function display(){
-//     alert('It was clicked!');
-// }
-// btn.addEventListener('click', display);
+import {sayHi} from '/hi.js';
+alert(sayHi);
+sayHi('john');
 
 
+// let p = new Promise((resolve, reject) => {
+//     let a = 1+1
+//     if (a == 3){
+//         resolve('success')
+//     }
+//     else {
+//         reject('failed')
+//     }
+// })
 
-// const newLine = document.querySelector("#line")
-// const first = document.createElement("div")
-// first.innerHTML = "hello"
-// newLine.appendChild(first);
+// p.then((message)=> {
+//     console.log('this is in the then ' + message)
+// }).catch((message) =>{
+//     console.log('this is in the catch ' +message)
+// })

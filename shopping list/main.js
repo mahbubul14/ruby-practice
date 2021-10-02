@@ -19,15 +19,22 @@ addBtn.addEventListener('click', function(e){
 const item = document.getElementById('item');
 const list = document.getElementById('list');
 const btn = document.getElementById('btn');
-btn.addEventListener('click', function(e){
-    const newList = document.createElement('li')
-    newList.innerHTML = item.value;
+btn.addEventListener('click', function(){
+    let myItem = item.value;
     item.value =' ';
-    list.appendChild(newList);
-});
 
 const li = document.createElement('li');
 const span = document.createElement('span');
 const del = document.createElement('button');
 
-li.appendChild()
+li.appendChild(span)
+span.textContent = myItem;
+li.appendChild(del);
+del.textContent ='Delete';
+list.appendChild(li);
+
+del.addEventListener('click', function(e){
+    list.removeChild(li);
+});
+input.focus();
+});
