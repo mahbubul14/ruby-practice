@@ -2,26 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Leaderboard</title>
 </head>
 <body>
-    <h1>hello world</h1>
-    <form action="#">
-        <input type="text" id="text">
-        <button id ="btn">
-            Click Me!
-        </button>
-    </form>
-    <p id ="result"></p>
-
-    <script type="module">
-        import {sayHi} from './say.js';
-      
-        document.body.innerHTML = sayHi('John');
-      </script>
-
-<script src="index.js"></script>
+    <header>
+        <h1 class="Leaderboard">Leaderboard</h1>
+    </header>
+    <article class="container">
+        <section class="left">
+            <div class="recent">
+                <h2>Recent scores</h2>
+                <button type="submit" class="refresh">Refresh</button>
+            </div>
+            <ul class="list"></ul>
+        </section>
+        <section class="right">
+            <div class="right-h2">
+                <h2>Add your score</h2>
+            </div>
+            <form class="right-inputs">
+                <input type="text" name="name" id="yourName" placeholder="Your name" required>
+                <input type="number" min="0" name="score" id="yourScore" placeholder="Your score" required>
+                <button type="button" class="submit">Submit</button>
+            </form>
+        </section>
+    </article>
+    <script src="./index.js"></script>
 </body>
 </html>
