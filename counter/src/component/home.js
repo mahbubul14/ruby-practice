@@ -18,10 +18,9 @@ const Home = () => {
   return (
   <div>
     <h1>Welcome to Counter Web App</h1>
-    <h2>Count:{count}</h2>
-    <button type="submit" onClick={incrementHandler}>Increment</button>
-    <br/>
-    <button type="submit" onClick={decrementHandler}>Decrement</button>
+    <h2 className="count">Count:{count}</h2>
+    <button type="submit" onClick={incrementHandler} className="increment">Increment</button>
+    <button type="submit" onClick={decrementHandler} disabled={count === 0} className="decrement">Decrement</button>
     <button type="submit" onClick={resettHandler}>Reset</button>
   </div>
   )

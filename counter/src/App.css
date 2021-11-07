@@ -7,6 +7,23 @@ ul {
   justify-content: space-evenly;
 }
 
+.count {
+  font-size: xx-large;
+  text-align: center;
+}
+
 button {
   margin: 1em;
+  padding: .6rem;
+  font-size: larger;
+}
+
+.increment {
+  color: white;
+  background-color: green;
+}
+
+.decrement {
+  color: white;
+  background-color: maroon;
 }
