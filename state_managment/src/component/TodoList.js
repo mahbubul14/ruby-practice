@@ -1,30 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import Task from '../component/Task';
+import {TodoContext} from '../component/Todocontext'
 
 const TodoList = () => {
-  const [tasks, setTasks] = useState(
-    [
-      {
-        title: 'Wake up',
-        time: '5.00PM',
-        id: 1
-      },
-      {
-        title: 'Exercise',
-        time: '5.00PM',
-        id: 2
-      },
-      {
-        title: 'Take breakfast',
-        time: '5.00PM',
-        id: 3
-      },
-    ]
-  );
-
+  const [tasks, setTasks] = useContext(TodoContext)
 return(
   <div>
   {tasks.map(task =>(
-    <li>{task.title}</li>
+    <Task title={task.title} time={task.time} key={task.id} />
   ))}
   </div>
 )
