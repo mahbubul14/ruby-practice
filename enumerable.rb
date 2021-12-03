@@ -9,8 +9,16 @@
 # end
 # puts invited_list
 
-friends = ['Sharon', 'Leo', 'Leila', 'Brian', 'Arun']
-friends.select {|friend| friend != 'Brian'}
+# friends = ['Sharon', 'Leo', 'Leila', 'Brian', 'Arun']
+# friends.select {|friend| puts friend != 'Brian'}
 
+# .......To see the output.......
 friends = ['Sharon', 'Leo', 'Leila', 'Brian', 'Arun']
-friends.reject { |friend| friend == 'Brian' }
+friend_list = friends.select {|friend| friend != 'Brian'}
+puts friend_list
+
+# friends = ['Sharon', 'Leo', 'Leila', 'Brian', 'Arun']
+# friends.reject { |friend| friend == 'Brian' }
+
+# friends = ['Sharon', 'Leo', 'Leila', 'Brian', 'Arun']
+# friends.each { |friend| puts "Hello, " + friend }
