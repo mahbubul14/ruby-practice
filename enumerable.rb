@@ -10,4 +10,7 @@
 # puts invited_list
 
 friends = ['Sharon', 'Leo', 'Leila', 'Brian', 'Arun']
-friends.select { |friend| friend != 'Brian'}
+friends.select {|friend| friend != 'Brian'}
+
+friends = ['Sharon', 'Leo', 'Leila', 'Brian', 'Arun']
+friends.reject { |friend| friend == 'Brian' }
