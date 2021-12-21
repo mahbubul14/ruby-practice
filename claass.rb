@@ -4,11 +4,15 @@ class Animal
     @name = name
     @number_of_legs = number_of_legs
   end
+
+  def speak
+    "Bla bla bla"
+  end
 end
 # animal_1 = Animal.new("Rex", 4)
 # animal_2 = Animal.new("Bob", 8)
 animal_1 = Animal.new("Rex", 4)
 animal_2 = Animal.new(8)
 
-p animal_1
-p animal_2
+p animal_1.speak
+p animal_2.speak
